@@ -194,10 +194,16 @@ a {
 
 @media(max-width: 400px) {
 	#mainheader h1{
-		word-break: break-all;
+		font-size: 4em;
+	}
+	#mainheader h2 {
+		font-size: xx-large;
 	}
 	#contact {
 		width: 100%;
+	}
+	section {
+		margin: 2rem 0;
 	}
 }
 
