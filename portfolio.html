@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SK - Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -19,7 +20,7 @@
     <div class="fifthbg">
         <nav class="navbar navbar-expand-lg bg-transparent navbar-dark py-3 shadow p-3 bg-body">
             <div class="container px-5 initialspacing">
-                <a href="index.html" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+                <a href="index.html" class="navbar-brand"><i class="bi bi-house"></i></a>
     
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navmenuportfolio"> <span class="navbar-toggler-icon"></span></button>
@@ -85,47 +86,59 @@
 
         <div class="container gallerythumbnail">
             <div class="row">
-              <div class="col-md">
-                <img src="imgs/thumbnails/luputhumb.jpg" alt="" class="img-fluid ">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/lupu.jpg" alt="Lupu's Transportation -logo" class="img-fluid">
                 <p class="gallerytext">Lupu's Transportation logo</p>
               </div>
-              <div class="col-md">
-                <img src="imgs/thumbnails/carelessthumb.jpg" alt="" class="img-fluid">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/careless.jpg" alt="'Careless whisper' -fake perfume ad" class="img-fluid">
                 <p class="gallerytext">A perfume advert mockup</p>
               </div>
-              <div class="col-md">
-                <img src="imgs/thumbnails/korpilahtirallithumb.jpg" alt="" class="img-fluid">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/korpilahtiralli.jpg" alt="Korpilahti Summer Rally 2021 -logo" class="img-fluid">
                 <p class="gallerytext">Korpilahti Rally 2021</p>
             </div>
             </div>
             <div class="row">
-                <div class="col-md">
-                  <img src="imgs/thumbnails/cattethumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/catte.jpg" alt="A giant cat photoshopped into New York City" class="img-fluid">
                   <p class="gallerytext">Giant cat reeking havoc</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/natasthumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/natas.jpg" alt="Nata's bakery -logo" class="img-fluid">
                   <p class="gallerytext">My first logo design</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/solacethumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/solace.jpg" alt="Fashion magazine mockup" class="img-fluid">
                   <p class="gallerytext">A fashion magazine mockup</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md">
-                  <img src="imgs/thumbnails/logothumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/logo.jpg" alt="Lives podcast -logo" class="img-fluid">
                   <p class="gallerytext">Lives -podcast logo</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/callingcardthumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/callingcard.jpg" alt="My new calling card" class="img-fluid">
                   <p class="gallerytext">My new calling card mockup</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/oldcallingcardthumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/oldcallingcard.jpg" alt="My old calling card" class="img-fluid">
                   <p class="gallerytext">My old calling card</p>
                 </div>
             </div>
+          </div>
+
+        <!-- picture modal -->
+          
+          <div class="my-modal">
+
+              <div class="container">
+                <p class="text-end"><i class="bi bi-x text-light modal-cancel"></i></p>
+                <img src="imgs/animalcrossinggarf.png" alt="" class="img-fluid image-modal">
+                <div class="full-image-caption text-white text-center"></div>
+              </div>
+
           </div>
 
     </section>
@@ -139,16 +152,16 @@
 
         <div class="container gallerythumbnail">
             <div class="row mb-4">
-              <div class="col-md">
-                <img src="imgs/thumbnails/javascriptthumbnail.jpg" alt="" class="img-fluid ">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/javascript.jpg" alt="" class="img-fluid ">
                 <p class="gallerytext">Sudoku game in JavaScript</p>
               </div>
-              <div class="col-md">
-                <img src="imgs/thumbnails/sa-thumb.jpg" alt="" class="img-fluid">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/sa.jpg" alt="" class="img-fluid">
                 <p class="gallerytext">Template</p>
               </div>
-              <div class="col-md">
-                <img src="imgs/thumbnails/javascriptthumbnail.jpg" alt="" class="img-fluid">
+              <div class="col-md thumbnails">
+                <img src="imgs/thumbnails/javascript.jpg" alt="" class="img-fluid">
                 <p class="gallerytext">Another template</p>
             </div>
           </div>
@@ -164,30 +177,30 @@
 
         <div class="container gallerythumbnail">
             <div class="row mb-4">
-                <div class="col-md">
-                  <img src="imgs/thumbnails/ocgirlrthumbnail.jpg" alt="" class="img-fluid ">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/ocgirl.jpg" alt="" class="img-fluid" data-info="information regarding the image">
                   <p class="gallerytext">Mechanic girl, OC</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/afoongusthumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/afoongus.jpg" alt="" class="img-fluid">
                   <p class="gallerytext">"A suspecting fungus"</p>
                 </div>
-                <div class="col-md">
-                  <img src="imgs/thumbnails/carmelitathumb.jpg" alt="" class="img-fluid">
+                <div class="col-md thumbnails">
+                  <img src="imgs/thumbnails/carmelita.jpg" alt="" class="img-fluid">
                   <p class="gallerytext">Carmelita Fox, fan-art</p>
               </div>
               </div>
               <div class="row mb-4">
-                  <div class="col-md">
-                    <img src="imgs/thumbnails/roniavtrthumb.jpg" alt="" class="img-fluid">
+                  <div class="col-md thumbnails">
+                    <img src="imgs/thumbnails/roniavtr.jpg" alt="" class="img-fluid">
                     <p class="gallerytext">A YouTube avatar commission</p>
                   </div>
-                  <div class="col-md">
-                    <img src="imgs/thumbnails/cloudprincessthumb.jpg" alt="" class="img-fluid">
+                  <div class="col-md thumbnails">
+                    <img src="imgs/thumbnails/cloudprincess.jpg" alt="" class="img-fluid">
                     <p class="gallerytext">A mario cloud turned princess</p>
                   </div>
-                  <div class="col-md">
-                    <img src="imgs/thumbnails/sleepy2thumb.jpg" alt="" class="img-fluid">
+                  <div class="col-md thumbnails">
+                    <img src="imgs/thumbnails/sleepy2.jpg" alt="" class="img-fluid">
                     <p class="gallerytext">Sleepyhead with a strong hair-day</p>
                   </div>
               </div>
@@ -210,6 +223,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
