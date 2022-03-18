@@ -188,7 +188,7 @@ a {
 	opacity: 100;
 }
 
-.gallerythumbnail img:hover{
+.gallerythumbnail img:hover {
 	filter: brightness(40%);
 }
 
@@ -197,7 +197,7 @@ a {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	padding-top: 3em;
+	padding: 3em 0 6em 0;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -212,10 +212,8 @@ a {
 	display: block;
 	color: #ccc;
 	margin: auto;
-}
-
-.full-image-caption {
-	color: #ccc;
+	overflow-y: scroll;
+	box-shadow: 0 1rem 2rem rgba(14, 11, 19, 0.356);
 }
 
 .modal-cancel {
@@ -229,6 +227,22 @@ a {
   cursor: pointer;
   transition: .2s ease;
 }
+
+.full-image-caption {
+	font-size: larger;
+}
+
+.image-modal, .full-image-caption {
+	animation-name: fade;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier();
+}
+
+@keyframes zoom {
+	from {transform:scale(0); opacity: 0;}
+	to {transform:scale(1); opacity: 100%;}
+}
+  
 
 @keyframes fade {
 	from {opacity: 0;} 
