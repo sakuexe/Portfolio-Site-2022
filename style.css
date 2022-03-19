@@ -6,6 +6,24 @@ body::before {
 } 
 */
 
+body {
+	overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(22, 13, 29, 0.774);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.178);
+}
+
 #mainheader h1 {
 	font-size: 5rem;
 	word-break: normal;
@@ -197,7 +215,7 @@ a {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	padding: 3em 0 6em 0;
+	padding: 2em 0 6em 0;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -214,6 +232,7 @@ a {
 	margin: auto;
 	overflow-y: scroll;
 	box-shadow: 0 1rem 2rem rgba(14, 11, 19, 0.356);
+	max-height: 800px;
 }
 
 .modal-cancel {
@@ -229,13 +248,21 @@ a {
 }
 
 .full-image-caption {
-	font-size: larger;
+	padding: 1rem 0;
+	font-weight: 600;
 }
 
 .image-modal, .full-image-caption {
 	animation-name: fade;
 	animation-duration: 1s;
 	animation-timing-function: cubic-bezier();
+}
+
+/* "about the image" -background */
+.modal-bg {
+	background: rgb(203,223,192);
+	background: linear-gradient(174deg, rgba(203,223,192,0) 0%, rgba(21, 7, 34, 0.459) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.116);
 }
 
 @keyframes zoom {

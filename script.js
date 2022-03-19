@@ -7,8 +7,6 @@ var modalImage = $(".image-modal")[0];
 var modalCaption = $(".full-image-caption")[0];
 var modalCancel = $(".modal-cancel");
 
-console.log(modalImage, modalCaption)
-
 // gaining access to all of the thumbnails
 var thumbnails = $(".thumbnails");
 
@@ -23,7 +21,7 @@ thumbnails.click(function() {
     modalCaption.innerHTML = $("img", this).attr("alt");
 });
 
-// allow modal to be cancelled by clicking away from the picture
+// allow modal to be cancelled by clicking away from the picture (or the caption)
 myModal.click(function(e) {
     if (!$(e.target).is(modalImage) && !$(e.target).is(modalCaption)) {
         myModal.css("display", "none");
