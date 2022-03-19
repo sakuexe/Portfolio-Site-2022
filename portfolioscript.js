@@ -1,3 +1,4 @@
+// Portfolio page
 
 // get the modal div
 var myModal = $(".my-modal");
