@@ -11,6 +11,8 @@ var modalCancel = $(".modal-cancel");
 // gaining access to all of the thumbnails
 var thumbnails = $(".thumbnails");
 
+
+
 // function when clicking on a thumbnail
 thumbnails.click(function() {
     myModal.css("display", "block");
