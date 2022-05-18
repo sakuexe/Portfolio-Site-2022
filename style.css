@@ -105,8 +105,8 @@ body {
 	background-color: rgb(221, 215, 123);
 }
 
-.language {
-	width: 20%;
+.language:root .skill-percent:root {
+	font-size: 20%;
 	text-align: right;
 }
 
@@ -288,6 +288,9 @@ a {
 	}
 	section {
 		margin: 2rem 0;
+	}
+	h1:root h2:root h3:root p:root {
+		font-size: 20%;
 	}
 }
 
