@@ -24,6 +24,11 @@ body {
 	background-color: rgba(0, 0, 0, 0.178);
 }
 
+nav {
+	backdrop-filter: blur(8px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
 #mainheader h1 {
 	font-size: 5rem;
 	word-break: normal;
@@ -38,6 +43,13 @@ body {
 .headerfont {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
+	word-break: break-word;
+}
+
+.mylogo {
+	position: relative;
+	top: -5em;
+	width: 13em;
 }
 
 .firstbg {
@@ -107,7 +119,6 @@ body {
 
 .language:root .skill-percent:root {
 	font-size: 20%;
-	text-align: right;
 }
 
 .topicheader {
@@ -181,6 +192,10 @@ a {
 #socialbar {
 	letter-spacing: 0.5rem;
 	font-size: 2rem;
+}
+
+.email {
+	word-break: break-all;
 }
 
 /* Portfolio */
@@ -283,11 +298,17 @@ a {
 	#mainheader h2 {
 		font-size: xx-large;
 	}
+
+	.mylogo {
+		width: 8em;
+		top: -3em;
+	}
+
 	#contact {
 		width: 100%;
 	}
 	section {
-		margin: 2rem 0;
+		margin: 0 0;
 	}
 	h1:root h2:root h3:root p:root {
 		font-size: 20%;
