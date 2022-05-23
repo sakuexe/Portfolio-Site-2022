@@ -6,10 +6,6 @@ body::before {
 } 
 */
 
-body {
-	overflow: overlay;
-}
-
 ::-webkit-scrollbar {
     width: 12px;
 	background: transparent;
@@ -98,7 +94,7 @@ nav {
 	margin: 5rem auto;
 }
 
-#aboutme {
+#aboutme #contactme {
 	font-size: large;
 }
 
@@ -110,7 +106,7 @@ nav {
 
 .outlinebtn:hover {
 	background-color: rgba(219, 136, 240, 0.726);
-	border-color: none;
+	border-color: rgba(255, 0, 0, 0);
 }
 
 .progress-bar {
@@ -168,7 +164,6 @@ a {
 .exp-header {
 	margin-bottom: 1rem;
 	font-weight: 300;
-	font-size: 2;
 }
 
 .exp-subheader {
@@ -218,7 +213,7 @@ a {
 */
 
 .gallerythumbnail img:hover + .gallerytext {
-	opacity: 100;
+	opacity: 100%;
 }
 
 .gallerythumbnail img:hover {
@@ -270,7 +265,7 @@ a {
 .image-modal, .full-image-caption {
 	animation-name: fade;
 	animation-duration: 1s;
-	animation-timing-function: cubic-bezier();
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* "about the image" -background */
