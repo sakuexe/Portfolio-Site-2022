@@ -212,7 +212,7 @@ a {
     rgba(17, 15, 20, 0.9) 120%);
 */
 
-.gallerythumbnail img:hover + .gallerytext {
+.gallerythumbnail img:hover + .gallerytext, .gallerythumbnail a:hover + .gallerytext{
 	opacity: 100%;
 }
 
@@ -251,10 +251,10 @@ a {
 
 .modal-cancel:hover,
 .modal-cancel:focus {
-  filter: brightness(50%);
-  text-decoration: none;
-  cursor: pointer;
-  transition: .2s ease;
+  	filter: brightness(50%);
+  	text-decoration: none;
+  	cursor: pointer;
+  	transition: .2s ease;
 }
 
 .full-image-caption {
