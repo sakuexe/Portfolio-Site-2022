@@ -6,6 +6,19 @@ body::before {
 } 
 */
 
+:root {
+	---purple: rgb(141, 62, 216);
+	---light-purple: rgb(166, 124, 206);
+}
+
+.fg-purple {
+	color: var(---purple);
+}
+
+.fg-light-purple {
+	color: var(---light-purple);
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 	background: transparent;
@@ -100,7 +113,7 @@ nav {
 
 .outlinebtn {
 	background-color: rgba(0, 255, 255, 0);
-	border-color: blueviolet;
+	border-color: var(---purple);
 	transition: .5s ease;
 }
 
@@ -127,7 +140,7 @@ nav {
 }
 
 .headernumber {
-	color: blueviolet;
+	color: var(---purple);
 }
 
 a {
@@ -156,7 +169,7 @@ a {
 /* Experience*/
 
 .exp-time {
-	color: blueviolet;
+	color: var(---purple);
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -180,7 +193,7 @@ a {
 }
 
 .form-control:focus {
-	border-color: blueviolet;
+	border-color: var(---purple);
 	box-shadow: 0 0 0 0.2rem rgba(110, 40, 167, 0.25);
 } 
 
@@ -203,7 +216,7 @@ a {
 	text-align: center;
 	opacity: 0;
 	transition: .5s ease;
-	margin-bottom: -1rem;
+	margin-bottom: -3rem;
 }
 
 /* A feather effect 
@@ -212,12 +225,21 @@ a {
     rgba(17, 15, 20, 0.9) 120%);
 */
 
+.thumbnails {
+	overflow: hidden;
+}
+
+.gallerythumbnail img {
+	transition: transform .5s ease;
+}
+
 .gallerythumbnail img:hover + .gallerytext, .gallerythumbnail a:hover + .gallerytext{
 	opacity: 100%;
 }
 
 .gallerythumbnail img:hover {
 	filter: brightness(40%);
+	transform: scale(1.3);
 }
 
 /* Image modal stuff */
