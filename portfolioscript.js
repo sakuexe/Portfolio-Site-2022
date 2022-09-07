@@ -1,36 +1,28 @@
 // Portfolio page
 
 // get the modal div
-var myModal = $(".my-modal");
+var myModal = document.querySelector('.my-modal')
 
 // get the image, cancel button and caption
-var modalImage = $(".image-modal")[0];
-var modalCaption = $(".full-image-caption")[0];
-var modalCancel = $(".modal-cancel");
+var modalImage = document.querySelector('.image-modal')
+var modalCaption = document.querySelector('.full-image-caption')
 
 // gaining access to all of the thumbnails
-var thumbnails = $(".thumbnails");
-
+var thumbnails = document.querySelectorAll('.thumbnails')
 
 
 // function when clicking on a thumbnail
-thumbnails.click(function() {
-    myModal.css("display", "block");
-    //debug show path
-    console.log($("img", this).attr("src"))
-
-    //set source to the path of the clicked image
-    modalImage.src = $("img", this).attr("src").replace("thumbnails", "gallerypics");
-    modalCaption.innerHTML = $("img", this).attr("alt");
-});
+for (let index = 0; index < thumbnails.length; index++) {
+    thumbnails[index].addEventListener('click', clicked => {
+        myModal.style.display = 'block'
+        clicked = clicked.path[0] 
+        modalImage.src = clicked.src.replace('thumbnails', 'gallerypics')
+        modalCaption.innerHTML = clicked.alt
+    })
+}
 
 // allow modal to be cancelled by clicking away from the picture (or the caption)
-myModal.click(function(e) {
-    if (!$(e.target).is(modalImage) && !$(e.target).is(modalCaption)) {
-        myModal.css("display", "none");
-        console.log("Clicked away from image");
-    }
-    else {
-        console.log("Clicked on the picture")
-    }
-});
+myModal.addEventListener('click', clicked => {
+    clicked = clicked.path[0]
+    if (clicked != modalImage && clicked != modalCaption) return myModal.style.display = 'none'
+})
