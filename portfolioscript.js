@@ -16,9 +16,9 @@ for (let index = 0; index < thumbnails.length; index++) {
     thumbnails[index].addEventListener('click', clicked => {
         closestSection = clicked.target.closest('section')
         if (closestSection.id === 'programmingport') return
-        myModal.style.display = 'block'
         clicked = clicked.target
         modalImage.src = clicked.src.replace('thumbnails', 'gallerypics')
+        myModal.style.display = 'block'
         modalCaption.innerHTML = clicked.alt
     })
 }
