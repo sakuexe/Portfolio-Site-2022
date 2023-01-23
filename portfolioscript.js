@@ -14,8 +14,10 @@ var thumbnails = document.querySelectorAll('.thumbnails')
 // function when clicking on a thumbnail
 for (let index = 0; index < thumbnails.length; index++) {
     thumbnails[index].addEventListener('click', clicked => {
+        closestSection = clicked.target.closest('section')
+        if (closestSection.id === 'programmingport') return
         myModal.style.display = 'block'
-        clicked = clicked.path[0] 
+        clicked = clicked.target
         modalImage.src = clicked.src.replace('thumbnails', 'gallerypics')
         modalCaption.innerHTML = clicked.alt
     })
@@ -23,6 +25,6 @@ for (let index = 0; index < thumbnails.length; index++) {
 
 // allow modal to be cancelled by clicking away from the picture (or the caption)
 myModal.addEventListener('click', clicked => {
-    clicked = clicked.path[0]
+    clicked = clicked.target
     if (clicked != modalImage && clicked != modalCaption) return myModal.style.display = 'none'
 })
