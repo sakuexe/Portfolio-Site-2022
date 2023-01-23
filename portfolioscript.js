@@ -14,12 +14,11 @@ var thumbnails = document.querySelectorAll('.thumbnails')
 // function when clicking on a thumbnail
 for (let index = 0; index < thumbnails.length; index++) {
     thumbnails[index].addEventListener('click', clicked => {
+        closestSection = clicked.target.closest('section')
+        if (closestSection.id === 'programmingport') return
         myModal.style.display = 'block'
-        console.log("clicked image:", clicked.target)
         clicked = clicked.target
-        console.log("modal image before: ", modalImage)
         modalImage.src = clicked.src.replace('thumbnails', 'gallerypics')
-        console.log("modal image after: ", modalImage)
         modalCaption.innerHTML = clicked.alt
     })
 }
